@@ -9,7 +9,8 @@
     <!-- <p>{{allowNewServer}}</p> -->
     <p [innerText]="allowNewServer"></p>
     <p>Server Creation status is</p>
-    <p> {{serverCreationStatus}}</p>
+    <!-- <p> {{serverCreationStatus}}</p> -->
+    <p *ngIf  ="serverCreated">Server is created with name  {{serverName}}</p>
 <app-server></app-server>
 <app-server></app-server>
 <p>{{serverName}}</p>
