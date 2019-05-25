@@ -13,6 +13,7 @@ export class ServersComponent implements OnInit {
   serverName = 'Test Server';
   serverCreated = false;
   servers = ['Server 1', 'server 2'];
+  TimeStamps = [];
 
   constructor() {
     
@@ -29,7 +30,7 @@ export class ServersComponent implements OnInit {
     this.serverCreated = true;
     this.serverCreationStatus = "Server Created ! name is " + this.serverName;
     this.servers.push(this.serverName);
-    
+    this.TimeStamps.push(new Date());
   }
 
   onUpdateServerName(event : Event){
